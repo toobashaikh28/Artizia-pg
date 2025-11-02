@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Assignment</title>
+</head>
+<body class="text-white font-medium bg-black">
+
+  <!-- HERO SECTION -->
+  <div class="relative bg-[url('./assets/hero.png')] bg-cover bg-center min-h-[570px] w-full">
+    <div class="relative z-10">
+      <nav class="flex flex-wrap items-center justify-between px-[5%] py-[4%]">
+        <img src="./assets/logo.png" alt="Logo" class="w-28 sm:w-32">
+        <div class="flex items-center gap-3 sm:gap-6 mt-4 sm:mt-0">
+          <img class="cursor-pointer w-5 sm:w-6" src="./assets/search.png" alt="">
+          <button class="bg-gradient-to-r from-[#2438CB] to-[#B600D1] rounded-full px-3 py-2 sm:px-5 sm:py-2 text-sm sm:text-base cursor-pointer hover:opacity-90 transition">Connect Wallet</button>
+          <img class="cursor-pointer w-6 sm:w-8" src="./assets/profile.png" alt="">
+        </div>
+      </nav>
+
+      <div class="flex flex-col items-center justify-center gap-6 text-center px-4 sm:px-0 h-[calc(100%-100px)]">
+        <p class="font-jost font-medium text-[28px] sm:text-[40px] pt-10 text-white">Create DIGITAL ART and SELL as NFT</p>
+
+        <div class="w-full sm:w-[60%] md:w-[50%] relative">
+          <button class="bg-purple-600 text-white px-3 py-2 sm:px-4 sm:py-2 font-semibold rounded-tl rounded-bl border-purple-600 cursor-pointer text-sm sm:text-base">Prompt</button>
+          <input class="h-[40px] sm:h-[45px] w-[80%] sm:w-[90%] px-3 sm:px-4 py-2 text-gray-700 focus:outline-none bg-white rounded-tr rounded-br absolute left-[70px] sm:left-[100px]" type="text" placeholder="Generate">
+        </div>
+
+        <p class="relative text-sm sm:text-base px-6 sm:px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS SECTION -->
+  <div class="bg-gradient-to-t from-[#3233CC] to-[#AE03D1] p-8 sm:p-10 flex flex-col justify-center items-center text-center gap-4">
+    <div class="w-[90%] sm:w-[80%]">
+      <p class="font-medium text-[28px] sm:text-[40px]">WE HAVE THE BEST NFT DIGITAL ARTISTS</p>
+      <p class="font-medium text-[16px] sm:text-[20px] mt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-6 sm:gap-12 mt-6">
+      <div>
+        <p class="text-[32px] sm:text-[44px] font-black">10K+</p>
+        <p class="text-[20px] sm:text-[26px] font-medium">RARE NFT</p>
+      </div>
+      <div>
+        <p class="text-[32px] sm:text-[44px] font-black">80K+</p>
+        <p class="text-[20px] sm:text-[26px] font-medium">PRODUCTS</p>
+      </div>
+      <div>
+        <p class="text-[32px] sm:text-[44px] font-black">05K+</p>
+        <p class="text-[20px] sm:text-[26px] font-medium">NFT ARTIST</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- NFT COLLECTION -->
+  <section class="p-6 sm:p-10 text-black bg-white">
+    <h1 class="mb-6 font-medium text-[24px] sm:text-[40px] text-center sm:text-left">NFT Collection</h1>
+    <div class="cards flex flex-wrap justify-center gap-6">
+      <!-- Reusable Card -->
+      <div class="relative w-[90%] sm:w-[290px] h-auto sm:h-[329px] bg-gray-50 rounded-lg shadow hover:shadow-lg transition">
+        <img src="./assets/img.png" alt="">
+        <img class="absolute bottom-16 left-28 hidden sm:block" src="./assets/duck.png" alt="">
+        <div class="text-black flex flex-col gap-2 px-3 pt-3 pb-4">
+          <div class="flex justify-between">
+            <p>TUD NFT</p>
+            <p>#9840</p>
+          </div>
+          <div class="flex justify-between items-center">
+            <p>Price</p>
+            <div class="flex items-center gap-2">
+              <img src="./assets/bit.png" alt="">
+              <p>260</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copy this card for others -->
+    </div>
+  </section>
+
+  <!-- TOP COLLECTION -->
+  <section class="text-black p-6 sm:p-16 bg-gray-50">
+    <div class="flex flex-col sm:flex-row justify-between items-center mb-4">
+      <p class="font-medium text-[24px] sm:text-[40px]">Top Collection</p>
+      <p class="text-[#B600D1] cursor-pointer font-medium text-sm sm:text-base mt-2 sm:mt-0">View more markets</p>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <div class="flex justify-between text-[#969696] text-sm sm:text-lg font-medium border-b pb-2">
+        <p>Name</p>
+        <div class="flex gap-6 w-[40%] sm:w-[25%] justify-between">
+          <p>Last Price</p>
+          <p>24h Change</p>
+        </div>
+      </div>
+
+      <!-- Example row -->
+      <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="relative">
+            <img src="./assets/bull.png" class="w-10 sm:w-14" alt="">
+            <img src="./assets/like.png" alt="" class="absolute bottom-0 left-8 w-4">
+          </div>
+          <p class="text-base sm:text-xl font-medium">Bull BTC Club</p>
+        </div>
+        <div class="flex gap-4 sm:gap-10 text-base sm:text-xl w-full sm:w-[25%] justify-around sm:justify-between">
+          <p>500.59 ETH</p>
+          <p>0.59 ETH</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BID SECTION -->
+  <section class="p-6 sm:p-20 text-black flex flex-wrap justify-center gap-6 bg-white">
+    <!-- Card -->
+    <div class="border border-gray-200 rounded-lg hover:shadow-lg transition">
+      <div class="relative w-[260px] h-[306px] cursor-pointer rounded">
+        <img src="./assets/piture.png" alt="">
+        <img class="absolute -top-5 -left-2" src="./assets/pic.png" alt="">
+        <img class="absolute -top-12 -right-10" src="./assets/Untitled (1).png" alt="">
+        <div class="flex justify-between p-3">
+          <div class="flex flex-col gap-1">
+            <p class="text-base font-semibold">Pinky Ocean</p>
+            <p class="text-[#4A4949] text-sm">0.08 ETH 1/20</p>
+            <p class="text-[#B600D1] text-sm cursor-pointer">Place a bid</p>
+          </div>
+          <div class="flex flex-col justify-between items-center">
+            <p>...</p>
+            <img src="./assets/51.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[url('./assets/bg.png')] bg-cover bg-center w-full p-8 sm:p-[40px] text-white">
+    <p class="text-[28px] sm:text-[40px] mb-8 text-center sm:text-left">How It Works</p>
+    <div class="flex flex-wrap justify-center sm:justify-between gap-10">
+      <div class="flex flex-col w-[260px] gap-4 text-center sm:text-left">
+        <img class="max-w-[40px] mx-auto sm:mx-0" src="./assets/blue 4.png" alt="">
+        <p class="text-[20px] sm:text-[24px] font-semibold">Set up your wallet</p>
+        <p class="text-[16px] sm:text-[18px] text-[#B6B6B6]">Sed ut perspiciatis unde iste natus error sit voluptatem.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
